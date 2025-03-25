@@ -1,6 +1,7 @@
 package logger
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
 
@@ -30,10 +31,13 @@ func InitLogger() *zap.Logger {
 	// 建立 File Encoder（寫入檔案）
 	fileEncoder := zapcore.NewJSONEncoder(encoderConfig) // 以 JSON 格式寫入檔案
 
-	// 設定 log 檔案位置
+	// 設定 log 檔案位置 build exe
 	exePath, _ := os.Executable()
 	exeDir := filepath.Dir(exePath)
-	logFilePath := filepath.Join(exeDir, "app.log")
+	logFilePath := filepath.Join(exeDir, "logs/app.log")
+	fmt.Println(logFilePath)
+
+	// go run main.go 用
 	// logFilePath := "logs/app.log"
 	file, _ := os.OpenFile(logFilePath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 
