@@ -112,3 +112,10 @@
   ]
 }
 ```
+### Example ERROR Response Message
+```json
+{
+    "error": "Invalid request body"
+}
+```
+
