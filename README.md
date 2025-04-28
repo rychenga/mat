@@ -1,5 +1,6 @@
 # MAT Services Portal
 - 建立單機版 MAT Services 
+- 用來協助與 Frontend 開發討論之範例
 
 ## Running the Project
 ```bash
@@ -16,8 +17,9 @@ go run -mod=mod main.go
 ## Func
 - logger
 - middleware
+- swagger
 
-## swagger 文件
+## swagger 文件網頁
 - http://localhost:8080/swagger/index.html
 
 ### param 參睥
