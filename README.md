@@ -22,7 +22,7 @@ go run -mod=mod main.go
 ## swagger 文件網頁
 - http://localhost:8080/swagger/index.html
 
-### param 參睥
+### param 參數
 ```json
 {
   "OVC_START_DATE_TIME": "2025/01/01 00:00:00",
